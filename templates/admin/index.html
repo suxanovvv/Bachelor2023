@@ -1,0 +1,9 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+{{ block.super }}
+
+<h2>{% trans "Custom Admin" %}</h2>
+<a href="{% url 'custom_admin' %}">Go to Custom Admin Page</a>
+{% endblock %}

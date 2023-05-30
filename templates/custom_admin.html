@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Custom Admin Page</h1>
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Route</th>
+        <th>Departure Time</th>
+        <th>Free Seats</th>
+        <th>Price</th>
+    </tr>
+    {% for row in table_data %}
+    <tr>
+        <td>{{ row.date }}</td>
+        <td>{{ row.route }}</td>
+        <td>{{ row.departure_time }}</td>
+        <td>{{ row.free_seats }}</td>
+        <td>{{ row.price }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
